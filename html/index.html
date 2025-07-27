@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brotherhood of Mumbai (BOM)</title>
+  <link rel="stylesheet" href="./../styles/style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo-section">
+        <img src="./../img/brotherhood of mumbai (flag line).png" class="logo-img" alt="BOM Logo" />
+        <span class="brand-title">Brotherhood of Mumbai (BOM)</span>
+      </div>
+      <div class="nav-links desktop-menu">
+        <a href="./index.html">Home</a>
+        <a href="./upcomingevent.html">Events</a>
+        <a href="./upcomingrides.html">Upcoming Rides</a>
+        <a href="./riders.html">Riders</a>
+        <a href="./completedrides.html">Completed Rides</a>
+        <a href="./blogs.html">Blog</a>
+        <a href="./reg.html" class="register-btn">Register</a>
+      </div>
+      <button class="mobile-menu-button" id="mobile-menu-button">
+        ☰
+      </button>
+    </div>
+    <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="./index.html">Home</a>
+        <a href="./upcomingevent.html">Events</a>
+        <a href="./upcomingrides.html">Upcoming Rides</a>
+        <a href="./riders.html">Riders</a>
+        <a href="./completedride.html">Completed Rides</a>
+        <a href="./blogs.html">Blog</a>
+        <a href="./reg.html" class="register-btn">Register</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="hero-section">
+      <div class="hero-content">
+        
+      </div>
+    </div>
+
+    <!-- Why Ride With Us -->
+    <div class="section-container">
+      <div class="section-heading">
+        <h2>Why Ride With Us?</h2>
+        <p>We organize safe, exciting, and memorable rides for riders of all skill levels.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon green"></div>
+          <img src="./../img/safety.png" class="icon-img" alt="Safety Icon">
+          <h3>Safety First</h3>
+          <p>We prioritize safety with experienced ride leaders and well-planned routes.</p>
+        </div>
+        <div class="card">
+          <div class="icon green"></div>
+          <img src="./../img/community.png" class="icon-img" alt="Community Icon">
+          <h3>Community</h3>
+          <p>Connect with fellow riders who share your passion for two-wheeled adventures.</p>
+        </div>
+        <div class="card">
+          <div class="icon green"></div>
+          <img src="./../img/adv.png" class="icon-img" alt="Adventure Icon">
+          <h3>Adventurous Routes & Scenic View</h3>
+          <p>Discover breathtaking trails and scenic routes you'd never find on your own.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Community Section -->
+    <div class="community-section">
+      <div class="community-wrapper">
+        <img src="./../img/our comm.png" alt="Group Ride" class="community-img" />
+        <div class="community-text">
+          <h2>Our Riding Community</h2>
+          <p>We believe riding is more than just transportation - it's a lifestyle, a passion, and a way to connect with nature and community.</p>
+          <a href="./upcomingrides.html" class="community-btn">View Upcoming Rides</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <img src="./../img/brotherhood of mumbai (flag line).png" alt="Small Logo">
+                <p>Riding together since 2018. Creating memorable experiences through shared adventures.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./upcomingevent.html">Events</a></li>
+                    <li><a href="./upcomingrides.html">Upcoming Rides</a></li>
+                     <li><a href="./riders.html">Riders</a></li>
+                     <li><a href="./completedrides.html">Completed Rides</a></li>
+                    <li><a href="./blogs.html">Blog</a></li>
+                    <li><a href="./reg.html">Register</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <address>
+                    123 Ride Street<br>
+                    Motorville, MV 12345<br>
+                    info@adventureriders.com<br>
+                    (555) 123-4567
+                </address>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on upcoming rides and events.</p>
+                <form>
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Designed and Maintained By: Kunal Jadhav</p>
+            <p>© 2023 Adventure Riders Group. All rights reserved. </p>
+        </div>
+    </footer>
+
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

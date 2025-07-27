@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brotherhood of Mumbai (BOM) - Upcoming Rides</title>
+    <link rel="stylesheet" href="./../styles/upcomingrides.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <img src="./../img/brotherhood of mumbai (flag line).png" alt="Logo" class="logo">
+                <span class="brand">Brotherhood of Mumbai (BOM)</span>
+            </div>
+            <div class="nav-right" id="desktop-menu">
+               <a href="./index.html">Home</a>
+                <a href="./upcomingevent.html">Events</a>
+                <a href="./upcomingrides.html">Upcoming Rides</a>
+                <a href="./riders.html">Riders</a>
+                <a href="./completedrides.html">Completed Rides</a>
+                <a href="./blogs.html">Blog</a>
+                <a href="./reg.html" class="register-btn">Register</a>
+            </div>
+            <button class="mobile-toggle" id="mobile-menu-button">☰</button>
+        </div>
+        <div class="mobile-menu hidden" id="mobile-menu">
+            <a href="./index.html">Home</a>
+            <a href="./upcomingevent.html">Events</a>
+            <a href="./upcomingrides.html">Upcoming Rides</a>
+            <a href="./riders.html">Riders</a>
+            <a href="./completedrides.html">Completed Rides</a>
+            <a href="./blogs.html">Blog</a>
+            <a href="./reg.html" class="register-btn">Register</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="rides-section">
+        <h1 class="section-title">Upcoming Rides</h1>
+        <div class="rides-container">
+            
+            <!-- Ride Card 1 -->
+            <div class="ride-card">
+                <div class="ride-image">
+                    <img src="./../img/15 aug.png" alt="Ride Image">
+                </div>
+                <div class="ride-content">
+                    <div class="ride-header">
+                        <h3>Ride to the freedom </h3>
+                    </div>
+                    <p>Celebrating Independence on Wheels.</p>
+                    <div class="ride-info">
+                        <span>📍 Hotel Raj Palace</span>
+                        <span>⏰ Aug 15, 5:30 AM</span>
+                    </div>
+                    <div class="ride-footer">
+                        <span class="registered">26 Riders Registered</span>
+                        <button class="join-btn"><a href="./reg.html">Join Ride</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ride Card 2 -->
+            <div class="ride-card">
+                <div class="ride-image">
+                    <img src="./../img/14 sept.png" alt="Ride Image">
+                </div>
+                <div class="ride-content">
+                    <div class="ride-header">
+                        <h3>In Line up</h3>
+                        <!--<span class="badge"></span>-->
+                    </div>
+                    <p>United We Ride, Together We Stand In Line Up.</p>
+                    <div class="ride-info">
+                        <span>📍 Hotel Raj Palace</span>
+                        <span>⏰ Sept 14, 5:30 AM</span>
+                    </div>
+                    <div class="ride-footer">
+                        <span class="registered">8 Riders Registered</span>
+                        <button class="join-btn">Join Ride</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ride Card 3 -->
+            <div class="ride-card">
+                <div class="ride-image">
+                    <img src="./../img/5 oct.png" alt="Ride Image">
+                </div>
+                <div class="ride-content">
+                    <div class="ride-header">
+                        <h3>Panch Jyotirlinga</h3>
+                       <!---- <span class="badge"></span>-->
+                    </div>
+                    <p>A Spiritual Ride to the Five Sacred Shrines Panch Jyotirlinga Yatra.</p>
+                    <div class="ride-info">
+                        <span>📍 Hotel Raj Palace</span>
+                        <span>⏰ Oct 5 to 10, 5:30 PM</span>
+                    </div>
+                    <div class="ride-footer">
+                        <span class="registered">15 Riders Registered</span>
+                        <button class="join-btn">Join Ride</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <img src="./../img/brotherhood of mumbai (flag line).png" alt="Small Logo">
+                <p>Riding together since 2018   . Creating memorable experiences through shared adventures.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./upcomingevent.html">Events</a></li>
+                    <li><a href="./upcomingrides.html">Upcoming Rides</a></li>
+                     <li><a href="./riders.html">Riders</a></li>
+                     <li><a href="./completedrides.html">Completed Rides</a></li>
+                    <li><a href="./blogs.html">Blog</a></li>
+                    <li><a href="./reg.html">Register</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <address>
+                    123 Ride Street<br>
+                    Motorville, MV 12345<br>
+                    info@adventureriders.com<br>
+                    (555) 123-4567
+                </address>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on upcoming rides and events.</p>
+                <form>
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Adventure Riders Group. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

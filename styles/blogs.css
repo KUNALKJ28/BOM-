@@ -1,0 +1,246 @@
+/* blogs.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #065f46;
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.brand-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #facc15;
+}
+
+.register {
+    background-color: #facc15;
+    color: #065f46;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    font-weight: bold;
+}
+
+.mobile-menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #047857;
+    padding: 10px;
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+
+.blog-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.blog-section h1 {
+    font-size: 36px;
+    color: #065f46;
+    margin-bottom: 30px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.blog-content .tag {
+    background-color: #d1fae5;
+    color: #065f46;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 9999px;
+    margin-right: 10px;
+}
+
+.blog-content .date {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.blog-content h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #111827;
+}
+
+.blog-content p {
+    color: #4b5563;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.blog-content a {
+    color: #065f46;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.blog-content a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #111827;
+    color: white;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer img {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.footer address, .footer p, .footer ul {
+    color: #9ca3af;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: white;
+}
+
+.footer form {
+    display: flex;
+}
+
+.footer input[type=email] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.footer button {
+    background-color: #059669;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer button:hover {
+    background-color: #047857;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #1f2937;
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .mobile-menu-toggle {
+        display: block;
+    }
+}
